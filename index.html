@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Calculator app</title>
+</head>
+
+<body class="body">
+  <div class="header">
+    <h3>calc</h3>
+    <div class="switch">
+      <div class="theme">THEME</div>
+      <div class="options">
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+      </div>
+      <div class="toggle">
+        <button class="toggle-button" onclick="changeTheme()"></button>
+      </div>
+    </div>
+  </div>
+  <input type="text" class="screen" readonly>
+  </input>
+  <div class="keypad">
+    <button class="button" onclick="appendToResult('7')">7</button>
+    <button class="button" onclick="appendToResult('8')">8</button>
+    <button class="button" onclick="appendToResult('9')">9</button>
+    <button class="button del-reset" onclick="deleteResult()">DEL</button>
+    <button class="button" onclick="appendToResult('4')">4</button>
+    <button class="button" onclick="appendToResult('5')">5</button>
+    <button class="button" onclick="appendToResult('6')">6</button>
+    <button class="button" onclick="appendToResult('+')">+</button>
+    <button class="button" onclick="appendToResult('1')">1</button>
+    <button class="button" onclick="appendToResult('2')">2</button>
+    <button class="button" onclick="appendToResult('3')">3</button>
+    <button class="button" onclick="appendToResult('-')">-</button>
+    <button class="button" onclick="appendToResult('.')">.</button>
+    <button class="button" onclick="appendToResult('0')">0</button>
+    <button class="button" onclick="appendToResult('/')">/</button>
+    <button class="button" onclick="appendToResult('*')">X</button>
+    <button class="button del-reset bottom-two" onclick="clearResult()">RESET</button>
+    <button class="button equal bottom-two" onclick="calculateResult()">=</button>
+  </div>
+  <!-- <div class="attribution"> -->
+  <!-- Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>. -->
+  <!-- </div> -->
+  <script src="script.js"></script>
+</body>
+
+</html>
